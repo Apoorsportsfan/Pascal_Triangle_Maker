@@ -2,7 +2,6 @@ import numpy as np
 from math import factorial
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-from Functions_of_cool_designs import save_as_gif_2d
 
 triangle_values = []
 
@@ -77,9 +76,4 @@ y_size = (len(triangle_values) + 1) * 0.2
 plt.xlim(-x_size, x_size)
 plt.ylim(-y_size, 0.5)
 
-def animate(frame):
-    pass
-
-anim = FuncAnimation(figure, animate, frames=200, interval=10)
-# save_as_gif_2d(anim, "baseball")
 plt.show()
